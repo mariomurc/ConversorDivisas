@@ -51,6 +51,13 @@ public class ConversorDivisas {
         divisa=teclado.next();
         divisa=divisa.toLowerCase();        
         
+        //LA IDEA SERÍA SINTETIZAR ESTO UN POCO MAS, AUNQUE TU SOLUCIÓN ES VÁLIDA...
+        //ESTÁ BIEN LO DE CONVERTIR A MINÚSCULAS PARA ASEGURARTE QUE LA COMPARACIÓN NO VA A DAR PROBLEMAS
+        //FIJATE QUE AL FINAL TU PROGRAMA PRINCIPAL TIENE MÁS LINEAS DE CÓDIGO POR LOS IFs QUE HAY DEBAJO, Y TE HAS CREADO TRES MÉTODOS
+        //QUE HACEN LO MISMO, LA ÚNICA DIFERENCIA ENTRE ELLOS ES EL VALOR POR EL QUE MULTIPLICAS.
+        //PIENSA EN UN MÉTODO COMO EL SIGUIENTE --> CambioDivisa(euros,divisa), donde Euros es el valor que quieres convertir, y divisa, 
+        //la moneda a la que quieres convertir, y en lugar de 3 métodos, intenta solucionarlo solo con ún único método.
+        
         if(divisa.equals(libras)){
             System.out.println("El cambio de "+euros+"€ a libras es de "+convertirLibras(euros)+"£");}
         else if(divisa.equals(dolares)){
